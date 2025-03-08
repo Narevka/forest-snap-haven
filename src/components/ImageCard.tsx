@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface ImageCardProps {
   src: string;
@@ -12,7 +13,11 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt, title, category }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="group img-hover-zoom rounded-lg overflow-hidden bg-muted cursor-pointer h-full">
+    <motion.div 
+      className="rounded-lg overflow-hidden bg-muted cursor-pointer h-full"
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className="relative h-full">
         <div
           className={`absolute inset-0 bg-muted ${
@@ -27,19 +32,27 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt, title, category }) => {
           }`}
           onLoad={() => setIsLoaded(true)}
         />
-        <div className="absolute inset-0 bg-foreground/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <motion.div 
+          className="absolute inset-0 bg-foreground/10 opacity-0"
+          whileHover={{ opacity: 1 }}
+        />
         {(title || category) && (
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/70 to-transparent text-white transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+          <motion.div 
+            className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/70 to-transparent text-white"
+            initial={{ y: 10, opacity: 0 }}
+            whileHover={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.2 }}
+          >
             {category && (
               <span className="inline-block text-xs uppercase tracking-wider bg-primary/80 px-2 py-1 rounded-full mb-2">
                 {category}
               </span>
             )}
             {title && <h3 className="font-medium">{title}</h3>}
-          </div>
+          </motion.div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
