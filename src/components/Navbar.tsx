@@ -11,8 +11,6 @@ const Navbar = () => {
   const navLinks = [
     { name: "Główna", path: "/" },
     { name: "Galeria", path: "/gallery" },
-    { name: "Hotel", path: "/hotel" },
-    { name: "Miód", path: "/honey" },
   ];
 
   useEffect(() => {

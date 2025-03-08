@@ -123,28 +123,38 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Call To Action */}
+      {/* Photography Process */}
       <section className="bg-forest-muted py-16">
         <div className="container-custom">
           <div className="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
-            <h2 className="heading-md mb-4">Zainteresowany naszymi usługami?</h2>
+            <h2 className="heading-md mb-4">O procesie fotograficznym</h2>
             <p className="body-md text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Odkryj nasze usługi hotelowe i produkty pszczele. Oferujemy komfortowy wypoczynek 
-              w sercu Puszczy Białowieskiej oraz naturalne, lokalne miody.
+              Każde zdjęcie to efekt cierpliwości, doświadczenia i miłości do przyrody. 
+              Nasze fotografie powstają z poszanowaniem dla dzikiej przyrody, bez ingerencji 
+              w naturalne zachowania zwierząt.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a 
-                href="/hotel" 
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-medium transition-colors"
-              >
-                Hotel
-              </a>
-              <a 
-                href="/honey" 
-                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-full font-medium transition-colors"
-              >
-                Miód
-              </a>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div className="p-6 bg-muted rounded-lg">
+                <h3 className="text-lg font-semibold mb-2">Cierpliwe czekanie</h3>
+                <p className="text-sm text-muted-foreground">
+                  Spędzamy wiele godzin w czatowniach, czekając na odpowiedni moment 
+                  do wykonania idealnego ujęcia.
+                </p>
+              </div>
+              <div className="p-6 bg-muted rounded-lg">
+                <h3 className="text-lg font-semibold mb-2">Specjalistyczny sprzęt</h3>
+                <p className="text-sm text-muted-foreground">
+                  Korzystamy z profesjonalnego sprzętu fotograficznego dostosowanego 
+                  do trudnych warunków puszczy.
+                </p>
+              </div>
+              <div className="p-6 bg-muted rounded-lg">
+                <h3 className="text-lg font-semibold mb-2">Znajomość terenu</h3>
+                <p className="text-sm text-muted-foreground">
+                  Nasza wieloletnia znajomość Puszczy Białowieskiej pozwala nam 
+                  docierać do miejsc, gdzie można spotkać rzadkie gatunki.
+                </p>
+              </div>
             </div>
           </div>
         </div>
