@@ -124,7 +124,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Natura Białowieży
+              Forest Snap Haven
             </motion.h1>
             <motion.p 
               className="body-lg"
@@ -132,8 +132,9 @@ const Index = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Odkryj piękno Puszczy Białowieskiej poprzez kolekcję profesjonalnych 
-              zdjęć dzikich zwierząt i ptaków w ich naturalnym środowisku.
+              Zanurz się w magicznym świecie Puszczy Białowieskiej poprzez nasze 
+              mistrzowskie fotografie dzikiej przyrody. Każde zdjęcie opowiada 
+              własną, niepowtarzalną historię.
             </motion.p>
             <motion.div 
               className="flex flex-wrap gap-4 justify-center pt-4"
