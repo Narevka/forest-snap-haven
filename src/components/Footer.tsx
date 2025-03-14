@@ -13,8 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-serif text-2xl font-bold">Natura Białowieży</h3>
             <p className="text-muted-foreground">
-              Odkryj piękno Puszczy Białowieskiej poprzez obiektywy naszych fotografów, 
-              odpocznij w naszym hotelu i spróbuj naturalnego miodu z lokalnych pasiek.
+              OdkryEBEEBEróbuj naturalnego miodu z lokalnych pasiek.
             </p>
           </div>
 
