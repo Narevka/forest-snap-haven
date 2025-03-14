@@ -11,7 +11,7 @@ const featuredPhotos = [
   {
     id: "1",
     src: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-    alt: "Jelenie w Puszczy Białowieskiej",
+    alt: "Jelenieloooooooooowieskiej",
     title: "Jelenie o poranku",
     category: "Ssaki",
   },
